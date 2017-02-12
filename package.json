@@ -1,0 +1,24 @@
+{
+  "name": "nz-chestnut-council",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.5.0",
+    "scss-compile": "^0.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss-compile": "node-sass -rw static/scss -o static/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-r3dshirt/nz-chestnut-council.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-r3dshirt/nz-chestnut-council/issues"
+  },
+  "homepage": "https://github.com/the-r3dshirt/nz-chestnut-council#readme"
+}

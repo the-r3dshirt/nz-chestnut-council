@@ -12,13 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
+import jinja2
 import webapp2
 
+jinja_environment = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        self.response.headers['Content-Type'] = 'text/plain'
-        self.response.write('Hello, World!')
+
+        template = jinja_environment.get_template("templates/index.html")
+        self.response.out.write(template.render({
+            "request": self.request,
+        }))
 
 
 app = webapp2.WSGIApplication([
