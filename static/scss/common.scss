@@ -1,8 +1,50 @@
 
+@import "colors";
 
-body {
-    h1 {
-        color: red;
-        padding: 1em;
+html {
+    height: 100%;
+    margin: 0;
+    
+    body {
+
+        background-image: url('../images/chestnut.bur.bw.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        color: $white;
+        height: 100%;
+        margin: 0;
+
+        div.wrapper {
+            margin-bottom: -14em;
+            min-height: 100%;
+            
+            div.content {
+                padding: 1em;
+            }
+        }
+
+        footer {
+            background: $black;
+            color: $white;
+            height: 14em;
+            padding: 1em;
+
+            div.footer-content {
+                margin: auto;
+                max-width: 40em;
+                
+                ul.contact-info {
+                    list-style: none;
+                    margin: auto;
+                    max-width: 20em;
+                    padding: 0em;
+
+                    li {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }

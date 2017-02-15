@@ -1,14 +1,83 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>{% block title %}New Zealand Chestnut Council {% block subTitle%}{%endblock%}{% endblock %}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta 
+            name="description" 
+            content="The New Zealand Chestnut Council Inc (NZCC) is the
+                nationally recognised product group for chestnuts. Its aim is to encourage, 
+                promote and advance New Zealand's chestnut industry including the promotion 
+                of the sale and consumption, of fresh and processed New Zealand grown Chestnuts,
+                both in New Zealand and overseas, for the benefit of New Zealand Chestnut
+                Growers" />
+        <meta 
+            name="keywords" 
+            content="chestnut, chestnuts, chestnutz, nzcc, new zealand chestnut council, 
+                growers, propagation, propagators, orchard, orchardists, nursery, 
+                new zealand" />
+        <meta name="author" content="Sam Knowles">
+        
+        <link type="text/css" rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <!--<link type="text/css" rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />-->
         <link type="text/css" rel="stylesheet" href="/static/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="/static/css/navigation.css" />
+
         {% block assets %}{% endblock %}
+
+        <title>
+            {% block title %}
+                New Zealand Chestnut Council {% block subTitle%}{%endblock%}
+            {% endblock %}
+        </title>
     </head>
 
     <body>
-        {% block content %}{% endblock %}
+        <div class="wrapper">
+            <div class="navigation">
+                {% block navigation %}
+                    {% include "templates/navigation.html" %}
+                {% endblock %}
+            </div> <!-- /navigation -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        {% block content %}{% endblock %}
+                    </div>
+                </div> <!-- /col -->
+            </div> <!-- /row -->
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-content">
+                            <p class="text-center">
+                            For further information about the New Zealand 
+                            Chestnut Council, contact:
+                            </p>
+                            
+                            <ul class="contact-info">
+                                <li>David Klinac</li>
+                                <li>10 June Place,</li> 
+                                <li>Hamilton</li>
+                                <li>New Zealand</li>
+                            </ul>
+
+                            <br />
+
+                            <ul class="contact-info">
+                                <li><strong>Phone:</strong> +64 7 8569321</li>
+                                <li><strong>Email:</strong> &#x64;&#x6B;&#x6C;&#x69;&#x6E;&#x61;&#x63;&#x40;&#x78;&#x74;&#x72;&#x61;&#x2E;&#x63;&#x6F;&#x2E;&#x6E;&#x7A;</li> 
+                            </ul>
+                        </div>
+                    </div> <!-- /col -->
+                </div>
+            </div>
+        </footer>
     </body>
 </html> 
 

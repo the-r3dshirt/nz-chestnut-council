@@ -1,0 +1,8 @@
+div.navigation {
+  width: 100%; }
+  div.navigation nav ul {
+    list-style: none;
+    margin: 0em;
+    padding: 0em; }
+    div.navigation nav ul li {
+      float: left; }
