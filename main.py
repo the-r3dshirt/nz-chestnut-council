@@ -19,15 +19,21 @@ import webapp2
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
-class MainPage(webapp2.RequestHandler):
+class MainHandler(webapp2.RequestHandler):
     def get(self):
-
         template = jinja_environment.get_template("templates/index.html")
         self.response.out.write(template.render({
             "request": self.request,
         }))
 
+class FaqHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template("templates/faq.html")
+        self.response.out.write(template.render({
+            "request": self.request,
+        }))
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
+    ('/', MainHandler),
+    ('/faq/', FaqHandler),
 ], debug=True)

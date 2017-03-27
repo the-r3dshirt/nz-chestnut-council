@@ -6,17 +6,35 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: #F0FFFF;
+    color: #000000;
     height: 100%;
-    margin: 0; }
+    margin: 0;
+    width: 100%; }
     html body div.wrapper {
       margin-bottom: -14em;
       min-height: 100%; }
       html body div.wrapper div.content {
+        background-color: rgba(255, 255, 255, 0.9);
         padding: 1em; }
+    html body header h1.logo {
+      color: #FFFFFF;
+      font-family: 'Merriweather', serif;
+      font-weight: bold;
+      margin: 0em 0.4em 0.4em 0.4em; }
+      html body header h1.logo em {
+        font-size: 1.35em;
+        font-weight: normal; }
+        html body header h1.logo em.n {
+          margin-right: 0.12em; }
+        html body header h1.logo em.z {
+          margin-left: -0.07em; }
+    html body header img.logo {
+      position: relative;
+      left: 11em;
+      top: 0.8em; }
     html body footer {
       background: #000000;
-      color: #F0FFFF;
+      color: #FFFFFF;
       height: 14em;
       padding: 1em; }
       html body footer div.footer-content {
