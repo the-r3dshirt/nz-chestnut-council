@@ -2,9 +2,8 @@
 @import "colors";
 
 html {
-    height: 100%;
     margin: 0;
-
+    height: 100%;
     body {
         background-image: url('../images/chestnut.bur.bw.jpg');
         background-repeat: no-repeat;
@@ -16,52 +15,53 @@ html {
         width: 100%;
 
         div.wrapper {
-            margin-bottom: -14em;
             min-height: 100%;
+
+             header {
+                h1.logo {
+                    color: $white;
+                    font-family: 'Merriweather', serif;
+                    font-weight: bold;
+                    margin: 0em 0.4em 0.4em 0.4em;
+
+                    em {
+                        font-size: 1.35em;
+                        font-weight: normal;
+
+                        &.n {
+                            margin-right: 0.12em;
+                        }
+
+                        &.z {
+                            margin-left: -0.07em;
+                        }
+                    }
+                }
+
+                img.logo {
+                    position: relative;
+                    left: 11em;
+                    top: 0.8em;
+                }
+            }
 
             div.content {
                 background-color: rgba(255, 255, 255, 0.9);
                 padding: 1em;
-            }
-        }
-
-        header {
-            h1.logo {
-                color: $white;
-                font-family: 'Merriweather', serif;
-                font-weight: bold;
-                margin: 0em 0.4em 0.4em 0.4em;
-
-                em {
-                    font-size: 1.35em;
-                    font-weight: normal;
-
-                    &.n {
-                        margin-right: 0.12em;
-                    }
-
-                    &.z {
-                        margin-left: -0.07em;
-                    }
-                }
-            }
-
-            img.logo {
-                position: relative;
-                left: 11em;
-                top: 0.8em;
+                margin-bottom: 16em;
             }
         }
 
         footer {
             background: $black;
             color: $white;
-            height: 14em;
-            padding: 1em;
+            margin-top: -16em;
+            height: 16em;
 
             div.footer-content {
                 margin: auto;
                 max-width: 40em;
+                padding: 1em;
 
                 ul.contact-info {
                     list-style: none;
