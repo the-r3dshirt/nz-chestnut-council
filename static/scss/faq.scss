@@ -1,12 +1,18 @@
 
-div.faq {
+@import "colors";
 
+div.faq {
     ul {
         list-style: none;
-
+        margin-bottom: 5em;
+        padding: 0em;
         li {
             margin-bottom: 0.5em;
+            padding: 0.5em 1em 0.5em 1em;
+
+            &:nth-child(2n) {
+                background-color: $tan;
+            }
         }
     }
-
 }

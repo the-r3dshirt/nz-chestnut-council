@@ -12,26 +12,30 @@ html {
     width: 100%; }
     html body div.wrapper {
       min-height: 100%; }
-      html body div.wrapper header h1.logo {
+      html body div.wrapper header div.logo h1.logo {
         color: #FFFFFF;
         font-family: 'Merriweather', serif;
         font-weight: bold;
         margin: 0em 0.4em 0.4em 0.4em; }
-        html body div.wrapper header h1.logo em {
+        html body div.wrapper header div.logo h1.logo em {
           font-size: 1.35em;
           font-weight: normal; }
-          html body div.wrapper header h1.logo em.n {
+          html body div.wrapper header div.logo h1.logo em.n {
             margin-right: 0.12em; }
-          html body div.wrapper header h1.logo em.z {
+          html body div.wrapper header div.logo h1.logo em.z {
             margin-left: -0.07em; }
-      html body div.wrapper header img.logo {
+      html body div.wrapper header div.logo img.logo {
         position: relative;
         left: 11em;
         top: 0.8em; }
       html body div.wrapper div.content {
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 1em;
-        margin-bottom: 16em; }
+        padding: 1em; }
+        html body div.wrapper div.content h1 {
+          color: #003700;
+          font-weight: bold; }
+      html body div.wrapper div.spacer {
+        height: 16em; }
     html body footer {
       background: #000000;
       color: #FFFFFF;

@@ -38,16 +38,30 @@
     <body>
         <div class="wrapper">
             <header>
-                <img class="logo" src="/static/images/logo.white.png" width="110px" alt="NZCC" />
-                <h1 class="logo">
-                    <strong>
-                        CHEST<em class="n">n</em>UT<em class="z">z</em>
-                    </strong>
-                </h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="logo">
+                                <img
+                                    class="logo"
+                                    src="/static/images/logo.white.png"
+                                    width="110px"
+                                    alt="NZCC" />
+                                <h1 class="logo">
+                                    <strong>
+                                        CHEST<em class="n">n</em>UT<em class="z">z</em>
+                                    </strong>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="md-col-1"></div>
+                    </div>
+                </div>
             </header>
             <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="row">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="navigation">
                             {% block navigation %}
                                 {% include "templates/navigation.html" %}
@@ -65,7 +79,8 @@
                     </div> <!-- /col -->
                 </div> <!-- /row -->
             </div> <!-- /container-fluid -->
-        </div>
+            <div class="spacer"></div>
+        </div> <!-- /wrapper -->
 
         <footer>
             <div class="container-fluid">

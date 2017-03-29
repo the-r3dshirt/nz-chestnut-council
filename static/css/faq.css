@@ -1,4 +1,9 @@
 div.faq ul {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 5em;
+  padding: 0em; }
   div.faq ul li {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em 0.5em 1em; }
+    div.faq ul li:nth-child(2n) {
+      background-color: #D3C6B1; }
