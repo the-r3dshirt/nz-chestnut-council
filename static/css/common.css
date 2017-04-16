@@ -32,8 +32,10 @@ html {
         background-color: rgba(255, 255, 255, 0.9);
         padding: 1em; }
         html body div.wrapper div.content h1 {
+          border-bottom: 1px solid #003700;
           color: #003700;
-          font-weight: bold; }
+          font-weight: bold;
+          padding-bottom: 0.05em; }
       html body div.wrapper div.spacer {
         height: 16em; }
     html body footer {

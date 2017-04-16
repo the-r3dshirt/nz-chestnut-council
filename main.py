@@ -26,6 +26,20 @@ class MainHandler(webapp2.RequestHandler):
             "request": self.request,
         }))
 
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template("templates/contact.html")
+        self.response.out.write(template.render({
+            "request": self.request,
+        }))
+
+class FactsHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template("templates/facts.html")
+        self.response.out.write(template.render({
+            "request": self.request,
+        }))
+
 class FaqHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template("templates/faq.html")
@@ -33,7 +47,19 @@ class FaqHandler(webapp2.RequestHandler):
             "request": self.request,
         }))
 
+class StorageHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template("templates/storage.html")
+        self.response.out.write(template.render({
+            "request": self.request,
+        }))
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
+    ('/contact/', ContactHandler),
+    ('/facts/', FactsHandler),
     ('/faq/', FaqHandler),
+    ('/storage/', StorageHandler),
+
 ], debug=True)
